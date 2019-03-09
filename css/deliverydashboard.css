@@ -1,0 +1,170 @@
+/* Defaults */
+:root {
+  --purple: #212135;
+  --lightPurple: #2D2D45;
+  --yellow: #FCEA3C;
+  --white: #FFFFFF;
+  --lightGray: #7C7C8E;
+  --green: #A5F291;
+  --red: #FA7477;
+}
+
+body {
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--purple);
+  font-family: Poppins;
+  text-shadow: none;
+  text-rendering: optimizelegibility;
+  --webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 24px;
+  color: var(--white);
+  font-weight: normal;
+}
+
+ul {
+  height: 100%;
+  padding: 0px;
+  list-style-type: none;
+}
+
+ul li {
+  margin-right: 16px;
+}
+
+a {
+  color: var(--lightGray);
+  font-size: 24px;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+a:hover {
+  color: var(--white);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.large-font {
+  font-size: 32px;
+}
+
+#white {
+  color: var(--white);
+}
+
+.lightGray {
+  color: var(--lightGray);
+}
+
+#green {
+  color: var(--green);
+}
+
+#red {
+  color: var(--red);
+}
+
+/* Main */
+main {
+  height: 700px;
+  width: 85%;
+}
+
+/* Nav */
+nav {
+  height: 100px;
+}
+
+/* Container */
+#container {
+  height: 575px;
+}
+
+/* Medium Row/Section 1 */
+#mediumRow {
+  height: 300px;
+}
+
+#mediumRow div {
+  height: 100%;
+  background-color: var(--lightPurple);
+}
+
+/* Medium Column */
+#mediumRow #mediumColumn {
+  width: 62%;
+  border-radius: 4px;
+}
+
+#mediumRow aside {
+  width: 50%;
+  height: 100%;
+}
+
+#mediumRow aside:first-of-type {
+  width: 90%;
+  padding-left: 32px;
+}
+
+.smallRow {
+  height: 33%;
+  width: 95%;
+}
+
+.smallRow div {
+  width: 50%;
+}
+
+#mediumRow aside:nth-of-type(2) {
+  border-radius: 4px;
+}
+
+#mediumRow #smallColumn {
+  height: 100%;
+  width: 36%;
+}
+
+#mediumRow #smallColumn #chartTwo {
+  width: 100%;
+}
+
+#mediumRow #chartOne {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Small Row/Section 2 */
+#smallRow {
+  height: 250px;
+  background-color: var(--lightPurple);
+  border-radius: 4px;
+}
+
+#chartThree {
+  height: 100%;
+}

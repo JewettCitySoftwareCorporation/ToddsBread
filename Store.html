@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todd's Bread</title>
+  <meta name="description" content="Todd's Bread Template">
+	<meta name="author" content="Luke@JCSC.biz">
+
+    <!--  
+            This HTML was produced By: Luke@jcsc.biz for Mr. Todd White.
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+    <meta ContentSRC="https://jewettcitysoftwarecorporation.github.io/ToddsBread/">
+  
+  
+  
+      <link rel="stylesheet" href="css/Store.css">
+
+  
+</head>
+
+<body>
+
+  <html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="top" class="">
+
+  <header>
+    <nav class=" navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!--brand, search-->
+        <div class="row">
+          <div class=" navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#bar" class="navbar-toggle">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+          </div>
+          <a class=" navbar-brand" href="#">
+            <h1 id="head">Todd's Bread</h1>
+          </a>
+
+          <div class="hidden-xs search pull-left input-group">
+            <!--All button-->
+
+            <div class="input-group-btn search-panel">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search-content">All </span>
+                                        <span class="caret"></span>
+                                     </button>
+
+              <ul class=" dropdown-menu" role="menu">
+                <li><a href="#all">All Categories</a></li>
+                <li><a href="#x">Loaf</a></li>
+                <li><a href="#y">Bagel</a></li>
+                <li><a href="#z">Sour Dough</a></li>
+                <li><a href="#a">Whole Grain</a></li>
+              </ul>
+
+            </div>
+            <input type="hidden" value="all">
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-btn">
+             <button type="button" class="sub btn btn-default">             <span class=" glyphicon glyphicon-search"></span>
+
+            </button>
+            </span>
+          </div>
+          <div class="visible-xs small">
+            <a href=#search><span data-toggle="tooltip" data-placement="bottom" title="Search" class="rt white glyphicon glyphicon-search"></span></a>
+            <a href=#address><span data-toggle="tooltip" data-placement="bottom" title="Address" class="rt white glyphicon glyphicon-map-marker"></span></a>
+            <a href=#cart><span data-toggle="tooltip" data-placement="bottom" title="Cart" class="rt white glyphicon glyphicon-shopping-cart"></span></a>
+          </div>
+          <div class="loo visible-xs">
+            <a href="#section3"><span class="grey rtt text">Your Bread.in</span></a>
+            <a href="#section4"><span class="grey rtt text">Today's Deals</span></a>
+          </div>
+        </div>
+
+        <div class="navbar-collapse collapse" id="bar">
+          <ul class="nav navbar-nav navbar-left">
+
+            <li class="hidden-xs deli">
+
+              <a href="#address"> <span class=" white glyphicon glyphicon-map-marker"></span>
+            <span class="grey">Deliver to</span>
+             <div class="white bold">Kolkata-700034</div></a>
+
+            </li>
+
+            <li>
+
+              <div class="dropdown show">
+                <button class="hidden-xs dropbtn dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="grey">Shop by </span>
+                                                    <div>
+                                                    <span class="white bold">Category</span>
+                                                    <span class="grey caret"></span>
+                                                    </div>
+                                                </button>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                <!--hamburger-->
+                <div class="visible-xs container">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h5 class="center  panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        Shop by category</a>
+                      </h5>
+                    </div>
+
+                    <div id="collapse1" class="panel-collapse collapse ">
+                      <div class="center panel-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">Bagels</li>
+                          <li class="list-group-item">Sour Dough</li>
+                          <li class="list-group-item">Twist</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--hamburger end-->
+              </div>
+            </li>
+            <ul class="nav navbar-nav navbar-center">
+              <li class="hidden-xs">
+                <a href="#section3">
+                        <span class="grey text ">Your bread.in</span>
+                     </a>
+              </li>
+              <li class="hidden-xs">
+                <a href="#section4">
+                          <span class="grey text">Today's Deals</span>
+                    </a>
+              </li>
+            </ul>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="">
+
+              <div class="dropdown show">
+                <button class="hidden-xs dropbtn dropdown-toggle" data- toggle="dropdown">
+                                                    <span class="grey">Hello, Sign in</span>
+                                                    <div>
+                                                    <span class="white bold">Your Orders</span>
+                                                    <span class="white caret"></span>
+                                                    </div>
+                                                </button>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                <!--hamburger-->
+                <div class="visible-xs container">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h5 class="center  panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Hello, Sign In,Your Orders</a>
+                      </h5>
+                    </div>
+
+                    <div id="collapse2" class="panel-collapse collapse ">
+                      <div class="center panel-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">Link 1</li>
+                          <li class="list-group-item">Link 2</li>
+                          <li class="list-group-item">Link 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--hamburger end-->
+              </div>
+            </li>
+            <li class="">
+              <div class="dropdown show ">
+                <button class="hidden-xs dropbtn dropdown-toggle" data-toggle="dropdown">
+                              <span class="grey">Try</span>
+                      <div>
+                           <span class="white bold">Platnium Membership</span>
+                           <span class="grey caret"></span>
+                           </div>
+                      </button>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                <!--hamburger-->
+                <div class="visible-xs container">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h5 class="center  panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        Try Prime</a>
+                      </h5>
+                    </div>
+
+                    <div id="collapse3" class="panel-collapse collapse ">
+                      <div class="center panel-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">Link 1</li>
+                          <li class="list-group-item">Link 2</li>
+                          <li class="list-group-item">Link 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--hamburger end-->
+              </div>
+            </li>
+            <li class="">
+
+              <div class="dropdown show ">
+                <button class="hidden-xs dropbtn dropdown-toggle" data-toggle="dropdown">
+                             <span class="grey">Your</span>
+                                 <div>
+                                     <span class="white bold">Lists</span>
+                                      <span class="grey caret"></span>
+                                   </div>
+                     </button>
+
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+                <!--hamburger-->
+                <div class="visible-xs container">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h5 class="center  panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        Your Lists</a>
+                      </h5>
+                    </div>
+
+                    <div id="collapse4" class="panel-collapse collapse ">
+                      <div class="center panel-body">
+                        <ul class="list-group">
+                          <li class="list-group-item">Link 1</li>
+                          <li class="list-group-item">Link 2</li>
+                          <li class="list-group-item">Link 3</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--hamburger end-->
+              </div>
+            </li>
+
+            <li class="hidden-xs">
+              <a href="#cart">
+                <div>
+                  <span class="bold white glyphicon glyphicon-shopping-cart"></span>
+                  <span class="white bold">Cart</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Carousel-->
+  <div id="myCarousel" class="carousel1 carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item pic active">
+        <img src="img/8.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="clouds">
+      </div>
+      <div class="item pic">
+        <img src="img/istockphoto-1004841850-640x640.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="sea">
+      </div>
+      <div class="item pic">
+        <img src="img/Bakery.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="mountain">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class=" glyphicon glyphicon-chevron-right"></span>
+             </a>
+  </div>
+
+  
+            <div class="container">
+                <div class="row">                 
+                    <div class="col-sm-8 col-xs-6">
+                        
+                        
+                <!--thumbnail carousel 1-->
+                        <div class="container">
+	           <div class="row">
+		          <div class="col-md-8 col-sm-8 col-xs-8">
+			             <h3>Todd's Classics</h3>
+			<div id="nail" class="carousel2 carousel slide" data-ride="carousel" data-interval="0">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="nail" data-slide-to="0" class="active"></li>
+					<li data-target="#nail" data-slide-to="1"></li>
+					<li data-target="#nail" data-slide-to="2"></li>                   
+				</ol>   
+				<!--  carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                    <a href="#" class=""><img src="img/bread-3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>                              
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                    <a href="#" class=""><img src="img/country-rustic-bread-xl-loaf.desktop.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="flower" class="nail-img img-responsive img-fluid"></a>                               
+                            </div>
+							<div class="hidden-xs col-sm-4">                              
+                                  <a href="#" class=""><img src="img/bread-bread-la-brioche-buns-6ct-bag-1_1024x1024.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="flower" class="nail-img img-responsive img-fluid"></a>                              
+                            </div>
+						</div>
+					</div>
+                    
+					<div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="img/spam-monkey-bread-655.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/pita.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/shawarma-2.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+						</div>
+					</div>
+                    <div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="img/shokupan-japanese-milk-bread.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" style="width: 100%;" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/1360-3-large.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/106153.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#nail" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#nail" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>                       
+	</div>
+</div>          
+                <!--thumbnail carousel 2-->
+                        <div class="container">
+	           <div class="row">
+		           <div class="col-md-8 col-sm-8 col-xs-8">
+			             <h3>Desserts</h3>
+			<div id="nail1" class="carousel2 carousel slide" data-ride="carousel" data-interval="0">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="nail1" data-slide-to="0" class="active"></li>
+					<li data-target="#nail1" data-slide-to="1"></li>
+					<li data-target="#nail1" data-slide-to="2"></li>                   
+				</ol>   
+				<!--  carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                    <a href="#" class=""><img src="https://images.pexels.com/photos/808941/pexels-photo-808941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="dessert"></a>                              
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                    <a href="#" class=""><img src="https://images.pexels.com/photos/827513/pexels-photo-827513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="dessert" class="nail-img img-responsive img-fluid"></a>                               
+                            </div>
+							<div class="hidden-xs col-sm-4">                              
+                                  <a href="#" class=""><img src="https://images.pexels.com/photos/461175/pexels-photo-461175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="dessert" class="nail-img img-responsive img-fluid"></a>                              
+                            </div>
+						</div>
+					</div>
+                    
+					<div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="https://images.pexels.com/photos/357586/pexels-photo-357586.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+						</div>
+					</div>
+                    <div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="https://images.pexels.com/photos/37537/cake-pops-candies-chocolate-food-37537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" style="width: 100%;" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/161420/ice-cream-cone-melting-hot-ice-cream-scoop-161420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/239584/pexels-photo-239584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="flower"></a>
+                                
+                            </div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#nail1" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#nail1" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>    
+                <!--thumbnail carousel 3-->         
+                        <div class="container">
+	           <div class="row">
+		           <div class="col-md-8 col-sm-8 col-xs-8">
+			             <h3>Sliced Bread</h3>
+			<div id="nail2" class="carousel3 carousel slide" data-ride="carousel" data-interval="0">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="nail2" data-slide-to="0" class="active"></li>
+					<li data-target="#nail2" data-slide-to="1"></li>
+					<li data-target="#nail2" data-slide-to="2"></li>                   
+				</ol>   
+				<!--  carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                    <a href="#" class=""><img src="img/imagese.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>                              
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                    <a href="#" class=""><img src="img/iwmage.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="animals" class="nail-img img-responsive img-fluid"></a>                               
+                            </div>
+							<div class="hidden-xs col-sm-4">                              
+                                  <a href="#" class=""><img src="img/keto-fat-bread-4.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="animals" class="nail-img img-responsive img-fluid"></a>                              
+                            </div>
+						</div>
+					</div>
+                    
+					<div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="img/Blueberry-Lemon-Bread-3.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/bread.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/iwmage.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>
+                                
+                            </div>
+						</div>
+					</div>
+                    <div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="img/10024000.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" style="width: 100%;" alt="animals"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/72044-Zesty-Lemon-Iced-Bread.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="img/Whole-Grain-15-Grain-Homepage.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="animals"></a>
+                                
+                            </div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#nail2" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#nail2" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+                <!--thumbnail carousel 4-->
+                        <div class="container">
+	           <div class="row">
+		          <div class="col-md-8 col-sm-8 col-xs-8">
+			             <h3>Miscellaneous</h3>
+			<div id="nail3" class="carousel4 carousel slide" data-ride="carousel" data-interval="0">
+				<!-- Carousel indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="nail3" data-slide-to="0" class="active"></li>
+					<li data-target="#nail3" data-slide-to="1"></li>
+					<li data-target="#nail3" data-slide-to="2"></li>                   
+				</ol>   
+				<!--  carousel items -->
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                    <a href="#" class=""><img src="https://images.pexels.com/photos/1124960/pexels-photo-1124960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>                              
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                    <a href="#" class=""><img src="https://images.pexels.com/photos/459791/pexels-photo-459791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="misc" class="nail-img img-responsive img-fluid"></a>                               
+                            </div>
+							<div class="hidden-xs col-sm-4">                              
+                                  <a href="#" class=""><img src="https://images.pexels.com/photos/949590/pexels-photo-949590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="misc" class="nail-img img-responsive img-fluid"></a>                              
+                            </div>
+						</div>
+					</div>
+                    
+					<div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="https://images.pexels.com/photos/386025/pexels-photo-386025.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/324654/pexels-photo-324654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/542556/pexels-photo-542556.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>
+                                
+                            </div>
+						</div>
+					</div>
+                    <div class="item carousel-item">
+						<div class="row">
+							<div class="col-sm-4">
+                                
+                                  <a href="#"><img src="https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" style="width: 100%;" alt="misc"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/357309/pexels-photo-357309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>
+                                
+                            </div>
+							<div class="hidden-xs col-sm-4">
+                                
+                                   <a href="#"><img src="https://images.pexels.com/photos/34074/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="nail-img img-responsive img-fluid" alt="misc"></a>
+                                
+                            </div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel controls -->
+				<a class="carousel-control left" href="#nail3" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="carousel-control right" href="#nail3" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div> 
+                    </div> 
+                    
+                        <div class="col-sm-4 col-xs-6" >
+                            <div class="container">
+                                <div class="row">
+                                    <div class="side col-sm-4 col-xs-12">
+                                        
+                                       <a href="#"><img src="https://images.pexels.com/photos/6022/nature-flowers-summer-garden.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo" class="clock img-responsive img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="side col-sm-4 col-xs-12">
+                                    
+                                        <a href="#"><img src="https://images.pexels.com/photos/1020325/pexels-photo-1020325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="photo" class="clock img-responsive img-fluid"> </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                            
+                    </div>
+                </div>
+            </div>
+
+    <!--footer-->
+    <footer style="padding-bottom:2em;background-color:#1e2e3a">
+      <div class="bot container-fluid">
+        <a href=#top>
+          <h4 class="less white">Back to top</h4>
+        </a>
+      </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <h4 class="white">Get to Know Us</h4>
+              <div class="gap">
+                <a class="grey foot" href="#">About Us</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Careers</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Press Release</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">XYZ cares</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Gift a Smile</a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="white">Connect with Us</h4>
+              <div class="gap">
+                <a class="grey foot" href="#">Facebook</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Twitter</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Instagram</a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="white">Make Money with Us</h4>
+              <div class="gap">
+                <a class="grey foot" href="#">Sell on Todd's Bread</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Become an Affiliate</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Fulfilment by Todd's Bread</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Advertise Your Products</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Bread Pay for Merchants</a>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="white">Let Us Help You</h4>
+              <div class="gap">
+                <a class="grey foot" href="#">Your Account</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Returns Centre</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">100% Purchase Protection</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Todd's Bread App Download</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Ordering Assisstant</a>
+              </div>
+              <div class="gap">
+                <a class="grey foot" href="#">Help</a>
+              </div>
+            </div>
+          </div>
+          <hr style="border-color: #37475A">
+          <div class="container-fluid">
+
+            <h3 class="white" style="text-align: center;">Todd's Bread</h3>
+            <div class="row">
+              <div class="pop end col-sm-1">
+                <a href="bc.html" class=" foot grey">bread carosel</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="deliverydashboard.html" class=" foot grey">Delivery Dashboard</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="Details.html" class=" foot grey">Details</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="delivery.html" class=" foot grey">delivery</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="index.html" class="foot grey">index </a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="OrderHistory.html" class=" foot grey">Order History</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="PressKit.html" class=" foot grey">Press Kit</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="Marketing.html" class=" foot grey">Marketing</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="styling-interface.html" class=" foot grey">styling-interface</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="CurrentOrders.html" class=" foot grey">Current Orders</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="AvailableInventory.html" class=" foot grey">AvailableInventory</a>
+              </div>
+              <div class="pop end col-sm-1">
+                <a href="TrackingDetails.html" class=" foot grey">TrackingDetails.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+</body>
+
+</html>
+  
+  
+
+    <script src="js/Store.js"></script>
+
+
+
+
+</body>
+
+</html>

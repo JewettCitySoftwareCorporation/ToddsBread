@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todd's BreadDelivery Dashboard</title>
+  <meta name="description" content="Todd's Bread Template">
+	<meta name="author" content="Luke@JCSC.biz">
+
+    <!--  
+            This HTML was produced By: Luke@jcsc.biz for Mr. Todd White.
+                        
+             ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+            ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+            ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+     -->
+    <meta ContentSRC="https://jewettcitysoftwarecorporation.github.io/ToddsBread/">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/deliverydashboard.css">
+
+  
+</head>
+
+<body>
+
+  <!-- https://dribbble.com/shots/3895042-Rapid-Use-Cases/attachments/885904 -->
+<body class="flex-center">
+ 
+  <main class="flex flex-column flex-between">
+    
+    <!-- Nav -->
+    <nav class="flex-center">
+      
+      <ul class="flex-center">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Tasks</a></li>
+        <li><a href="#">Couriers</a></li>
+      </ul>
+      
+    </nav>
+   
+    <!-- Dashboard -->
+    <div class="flex flex-column flex-between" id="container">
+
+      <!-- Medium Row --> 
+      <section class="flex flex-between" id="mediumRow">
+        
+        <!-- Delivery Time Section -->
+        <div class="flex" id="mediumColumn">
+          
+          <!-- Delivery Times -->
+          <aside class="flex-center flex-column">
+            
+            <div class="flex smallRow">
+              <h1>Delivery Time</h1>
+            </div>
+            
+            <div class=" flex smallRow lightGray">
+              
+              <div class="flex space-between">
+                <p>Average Time<br>
+                <span class="large-font" id="white">6:51</span></p>
+              </div>
+              
+              <div class="flex space-between">
+                <p>Limit Time<br>
+                <span class="large-font lightGray">10:00</span></p>
+              </div>
+              
+            </div>
+            
+            <div class="flex smallRow lightGray">
+              
+              <div class="flex space-between">
+                <p>Best Time<br>
+                <span class="large-font"  id="green">2:32</span></p>
+              </div>
+              
+              <div class="flex space-between">
+                <p>Longest Time<br>
+                <span class="large-font"  id="red">14:32</span></p>
+              </div>
+              
+            </div>
+          
+          </aside>
+          
+          <!-- Delivery Times Pie Chart -->
+          <aside>
+            <div id="chartOne"></div>
+          </aside>
+          
+        </div>
+        
+        <!-- Horizontal Bar Section -->
+        <div id="smallColumn">
+          
+          <div id="chartTwo"></div>
+        
+        </div>
+        
+      </section>
+      
+      <!-- Small Row -->
+      <section id="smallRow">
+        
+        <div id="chartThree"></div>
+        
+      </section>
+      
+    </div>
+    
+  </main>
+  
+</body>
+  <script src='https://cdn.zingchart.com/zingchart.min.js'></script>
+
+  
+
+    <script src="js/deliverydashboard.js"></script>
+
+
+
+
+</body>
+
+</html>

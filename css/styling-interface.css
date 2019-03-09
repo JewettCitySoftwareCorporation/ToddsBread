@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding-bottom: 50vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  margin: auto;
+  top: -6px;
+  left: 300px;
+  color: #7f8c8d;
+}
+
+p {
+  position: absolute;
+  margin: auto;
+  left: 300px;
+  top: 50px;
+  width: 500px;
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+.box {
+  position: absolute;
+  background: #313133;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 250px;
+  padding-top: 12px;
+  box-shadow: inset 0 1px 0 0 #424244;
+}
+.box#box2 {
+  right: 0;
+}
+.box .close {
+  position: absolute;
+  margin: auto;
+  right: 2px;
+  top: 1px;
+  height: 9px;
+  width: 9px;
+  color: #000;
+  background: #454545;
+  border-radius: 2px;
+  border: 1px solid #252526;
+  box-shadow: inset -2px 0 0 0 #454545, inset 2px 0 0 0 #454545, inset 0 -2px 0 0 #454545, inset 0 -3px 0 0 #8f8f8f;
+  cursor: pointer;
+}
+.box .close.open {
+  box-shadow: inset 0 0 0 2px #454545, inset 0 0 0 3px #8f8f8f;
+}
+.box .tabs {
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #252526;
+  box-shadow: inset 0 1px 0 0 #444446;
+  background: #343436;
+}
+.box .tabs .tab {
+  padding: 4px 10px;
+  font-size: 14px;
+  border-right: 1px solid #252526;
+  border-bottom: 1px solid #252526;
+  text-shadow: 0 -1px 0 #333333;
+  color: #8f8f8f;
+}
+.box .tabs .tab.active {
+  background: #4d4d50;
+  border-bottom: none;
+  box-shadow: 0 1px 0 0 #4d4d50, inset 0 1px 0 0 #646467;
+  color: #fff;
+}
+.box .tabs .tab:not(.active):hover {
+  background: #454545;
+  box-shadow: inset 0 1px 0 0 #595959;
+  cursor: pointer;
+}
+.box > ul {
+  list-style: none;
+  background: #4d4d50;
+  margin: 0;
+  border-top: 1px solid #646467;
+  box-shadow: 0 -1px 0 0 #252526;
+  padding: 0;
+  padding-top: 8px;
+  display: none;
+  font-family: 'Roboto Slab', serif;
+}
+.box > ul.active {
+  display: block;
+}
+.box > ul > li {
+  background: #414141;
+  border-bottom: 1px solid #343434;
+  display: flex;
+  position: relative;
+}
+.box > ul > li:first-child {
+  border-top: 1px solid #28282a;
+}
+.box > ul > li a {
+  display: block;
+  padding: 16px;
+  color: #fff;
+  text-shadow: 0 1px 0 #333333;
+}
+.box > ul > li.field {
+  padding: 8px;
+  flex: 1;
+  display: flex;
+  background: #4d4d50;
+  box-shadow: inset 0 1px 0 0 #707070;
+  position: relative;
+}
+.box > ul > li.field span {
+  margin-right: 8px;
+  text-shadow: 0 -1px 0 #000;
+  font-size: 18px;
+}
+.box > ul > li.field span.font-size {
+  text-shadow: -4px 4px 0 rgba(255, 255, 255, 0.4);
+}
+.box > ul > li.field select {
+  max-width: 100%;
+  flex: 1;
+  background: #3a3a3a;
+  color: #fff;
+  border: 1px solid #292929;
+  box-shadow: 0 1px 0 0 #696969;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+}
+.box > ul > li.field select:not(:last-child) {
+  margin-right: 8px;
+}
+.box > ul > li.color ul {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  height: 60px;
+  grid-template-rows: 50% 50%;
+  grid-auto-columns: auto;
+  height: 100%;
+  grid-auto-flow: column;
+}
+.box > ul > li.color ul li {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  text-indent: -999999px;
+  display: block;
+}
+.box > ul > li.color ul li.active {
+  box-shadow: inset 0 0 0 1px #3498db, inset 0 0 0 2px #196090;
+}
+.box > ul > li input[type=checkbox] {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+.box > ul > li input[type=checkbox]:checked + label {
+  border: 1px solid #292929;
+  background: #3b3b3b;
+  box-shadow: inset 0 1px 0 0 #333333, 0 1px 0 0 #6a6a6a;
+}
+.box > ul > li input[type=checkbox]:disabled + label {
+  color: #868686;
+}
+.box > ul > li input[type=checkbox]:disabled + label:hover {
+  background: transparent;
+  box-shadow: none;
+  border: 1px solid transparent;
+  cursor: default;
+}
+.box > ul > li label {
+  width: 25px;
+  height: 25px;
+  line-height: 27px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+.box > ul > li label.italic {
+  font-style: italic;
+}
+.box > ul > li label.underline {
+  text-decoration: underline;
+}
+.box > ul > li label.line-through {
+  text-decoration: line-through;
+}
+.box > ul > li label:not(:last-child) {
+  margin-right: 4px;
+}
+.box > ul > li label:hover {
+  border: 1px solid #292929;
+  background: #6c6c6c;
+  box-shadow: inset 0 1px 0 0 #919191, 0 1px 0 0 #6a6a6a;
+  cursor: pointer;
+}
+.box > ul > li label.active {
+  border: 1px solid #292929;
+  background: #3b3b3b;
+}
+.box.closed *:not(.close) {
+  display: none;
+}
