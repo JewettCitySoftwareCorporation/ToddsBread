@@ -1,3 +1,8 @@
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
 var ToC =
   "<nav role='navigation' class='table-of-contents'>" +
     "<h2>On this page:</h2>" +

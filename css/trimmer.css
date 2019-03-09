@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #A2D6CC;
+  font-family: "Roboto", sans-serif;
+}
+
+#outputField {
+  font-size: 1.3em;
+  
+}
+a {
+  text-decoration: none;
+}
+ul {
+  padding: none;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 0.5em;
+  margin-top: 3em;
+  padding-left: 0em;
+  width: 25em;
+  height: 100%;
+  background-color: white;
+  background: #fff;
+  border-radius: 1em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0), 3px 6px 6px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.25s;
+  font-family: "Roboto" sans-serif;
+}
+h3 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+h5 {
+  margin-bottom: -0.2em;
+}
+form {
+  display: block;
+  margin-left: 3em;
+  padding-left: 2em;
+  text-align: left;
+  color: black;
+}
+
+input {
+  margin-bottom: 0.5em;
+  border-radius: .2em;
+  border: none;
+  border-color: transparent;
+  background-color: #c6ddd9;
+}
+
+/*   // background-color: #3CBC8D; */
+input[type="text"] {
+  padding: .2em;
+  padding-left: .5em;
+  outline: none;
+  color: black;
+}
+
+select {
+  padding: 0.2em;
+  border-radius: .2em;
+}
+
+button {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+  padding-top: 0.1em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-left: 6.8em;
+  margin-bottom: 1em;
+
+  outline: none;
+  height: 40px;
+  width: 130px;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+button:hover {
+  color: white;
+  background: #A2D6CC;
+}
+button:active {
+  letter-spacing: 2px;
+}
+button:after {
+  content: "SUBMIT";
+}
+
+.onclic {
+  width: 40px;
+  border-color: #bbbbbb;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #1ecd97;
+  -webkit-animation: rotating 2s 0.25s linear infinite;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content: "";
+}
+.onclic:hover {
+  color: #1ecd97;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #1ecd97;
+}
+.validate:after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

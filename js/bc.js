@@ -1,3 +1,9 @@
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
+
 const $ = selector => document.querySelector(selector);
 const $$ = selector => document.querySelectorAll(selector);
 let tick = 0;

@@ -1,3 +1,8 @@
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
 var Application = React.createClass({ displayName: "Application",
   getInitialState: function () {
     return {

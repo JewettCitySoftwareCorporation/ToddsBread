@@ -1,0 +1,238 @@
+body {
+  background: #e7f0d6;
+  font-family: arial;
+}
+
+div h2 {
+  font-family: verdana;
+}
+.form-row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  float: left;
+  width: 150px;
+  font-weight: bold;
+}
+
+#deliver-to #streetTitle {
+  height: 80px;
+}
+
+label {
+  font-size: bold;
+  font-family: verdana;
+  margin-top: 14px;
+}
+
+input {
+  padding: 15px;
+  border: 1px solid rgb(242, 243, 244);
+  border-bottom: 2px solid rgb(220, 224, 225);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 408px;
+  background: rgb(242, 243, 244);
+  color: rgb(89, 94, 95);
+}
+
+input.error {
+  background: rgb(243, 215, 212);
+  border: 1px solid rgb(243, 215, 212);
+  border-bottom: 2px solid rgb(181, 72, 59);
+}
+
+textarea {
+  padding: 15px;
+  border: 1px solid rgb(242, 243, 244);
+  border-bottom: 2px solid rgb(220, 224, 225);
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 100%;
+  background: rgb(242, 243, 244);
+  color: rgb(89, 94, 95);
+  min-height: 100px;
+}
+
+#deliver-to .two-inputs input{
+  width: 200px;
+  margin-right: 5px;
+}
+
+#deliver-to .three-inputs input{
+  width: 130px;
+  margin-right: 5px;
+}
+
+#deliver-to input#city {
+  width: 222px;
+}
+
+#deliver-to input#state {
+  width: 68px;
+}
+
+#deliver-to input#zipcode {
+  width: 100px;
+}
+
+#grubmarket-checkout {
+  width: 670px;
+  margin: auto;
+}
+
+
+#grubmarket-checkout .section-header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#grubmarket-checkout .checkout-card {
+  background: #FFF;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: -1px 1px 5px #CCC;
+}
+
+.checkout-card .card-header {
+  display: block;
+  background: #373d3f;
+  padding: 18px 50px 18px 50px;
+}
+
+.card-header .header-left {
+  display: inline-block;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.card-header .header-right {
+  float: right;
+  color: #FFF;
+}
+
+.card-header .header-right > div {
+  float: left;
+}
+
+.card-header .header-right input{
+  width: 20px;
+}
+
+.card-header .header-bold {
+  font-weight: bold;  
+}
+
+.checkout-card .card-content {
+  padding: 50px;
+  background: #FFF;
+}
+
+.card-content .form-column {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.card-content .form-column:last-child {
+  margin-right: 0;
+}
+
+.card-content input#number {
+  width: 280px;
+}
+
+.card-content input#expiration {
+  width: 150px;
+}
+
+.card-content input#cvv {
+  width: 100px;
+}
+
+.checkout-card .card-footer {
+  display: block;
+  background: #373d3f;
+  padding: 18px 50px 18px 50px;
+}
+
+.card-footer .footer-left {
+  display: inline-block;
+  color: #FFF;
+  font-size: 16px;
+}
+
+.card-footer .footer-right {
+  float: right;
+  color: #FFF;
+}
+
+
+/*PAYMENT*/
+
+
+/* Ordered */
+
+.card-content .ordered-item {
+
+}
+.card-content .delivery-from {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content .delivery-details {
+  font-size: 16px;
+  border-bottom: 1px solid black;
+}
+
+.card-content .ordered-item-price {
+  float: right;
+}
+
+.card-content .ordered-item-details {
+  display: inline-block;
+}
+
+
+#delivery-instructions {
+  border-top: 1px solid #dadedf;
+  width: 558px;
+  padding-top: 15px;
+}
+
+#delivery-instructions textarea {
+  margin-top: 15px;
+}
+
+.cost-adjustments {
+  background: #d4e5f1;
+  color: #373d3f;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -4px;
+}
+
+.cost-adjustments ul {
+  list-style: none;
+}
+
+.cost-adjustments li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.cost-adjustments span {
+  width: 80px;
+  display: inline-block;
+}
+
+.cost-adjustments .adjustments-right {
+  float: right;
+  margin-right: 40px;
+}
+
+

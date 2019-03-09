@@ -1,4 +1,8 @@
-// https://html5up.net/future-imperfect
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
 $(document).ready(function(){
     var user_name = 'James Cardigan', 
         user_icon = 'https://az616578.vo.msecnd.net/files/2016/05/22/635994971002145818-1828178128_Hipster-326202.jpg'; // Set to users profile pic

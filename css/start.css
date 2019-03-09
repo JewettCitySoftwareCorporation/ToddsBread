@@ -1,0 +1,136 @@
+.signature {
+  position: absolute;
+  color: #25373D;
+  font-size: 15px;
+  top: 0;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.bar-nav {
+  left: 0;
+  top: 0;
+  width: 12%;
+  position: fixed;
+  height: 100%;
+  background: #7CEECE;
+  z-index: 1;
+}
+.bar-nav .logo-title {
+  font-size: 50px;
+  margin-top: 100px;
+  transform: rotate(-90deg);
+  color: white;
+  font-family: "Fjalla One";
+}
+
+.main {
+  width: 88%;
+  left: 12%;
+  height: 100%;
+  top: 0;
+  background: #f2f2f2;
+  position: absolute;
+}
+.main .container {
+  width: 95%;
+  height: 95%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+}
+.main .container .title-center {
+  font-family: "Fjalla One";
+  font-size: 45px;
+  color: #25373D;
+  text-align: center;
+}
+.main .container .hero {
+  margin-top: -40px;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+.main .container .search-container {
+  width: 50%;
+  height: 200px;
+  margin-left: 25%;
+  margin-top: 30px;
+}
+.main .container .search-container .button-begin {
+  width: 40%;
+  margin-top: 50px;
+  height: 50px;
+  margin-left: 30%;
+  border-radius: 15px;
+  border-style: none;
+  background: #7CEECE;
+  color: white;
+  font-size: 30px;
+  font-family: "Fjalla One";
+}
+.main .container .search-container .button-begin:hover {
+  cursor: pointer;
+}
+.main .container .search-container .order-form {
+  background: #7CEECE;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 10px;
+}
+.main .container .search-container .order-form .result-title {
+  font-family: "Fjalla One";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+.main .container .search-container .order-form .result-container {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  background: white;
+  margin-top: 20px;
+  display: inline-block;
+  color: black;
+  text-align: center;
+}
+.main .container .search-container .request-title {
+  position: relative;
+  font-family: "Fjalla One";
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-bottom: -30px;
+}
+.main .container .search-container .search-bar {
+  width: 80%;
+  margin-top: 70px;
+  margin-left: 10%;
+  background: white;
+  height: 70px;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  color: #25373D;
+  outline: none;
+  text-transform: uppercase;
+}
+.main .container .search-container .search-bar::placeholder {
+  transition: .5s;
+}
+.main .container .search-container .search-bar:hover {
+  font-size: 35px;
+  color: #7CEECE;
+}
+.main .container .search-container #loading {
+  font-family: "Fjalla One";
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  display: none;
+}

@@ -1,3 +1,9 @@
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
+
 var colors = ['green', 'blue', 'purple', 'red', 'orange', 'yellow', 'grey', 'pink'];
 
 $(document).ready(function() {

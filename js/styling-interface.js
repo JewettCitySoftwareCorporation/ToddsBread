@@ -1,3 +1,8 @@
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
 $('li.color li').each(function() {
 	var color = $(this).html();
 	$(this).css('background', color);

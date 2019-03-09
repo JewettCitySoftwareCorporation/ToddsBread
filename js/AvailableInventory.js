@@ -1,6 +1,9 @@
-/*
- * Noel Delgado | @pixelia_me
- */
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
+
 
 var items = []
   , point = document.querySelector('svg').createSVGPoint();

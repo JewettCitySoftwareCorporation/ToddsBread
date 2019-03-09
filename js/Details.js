@@ -1,4 +1,9 @@
-// center .nxt span
+/***************************************************************
+ *
+ *   Bult By : Luke@jcsc.biz for Mr. Todd White
+ * 
+***************************************************************/
+
 $(document).ready(function() {
 	var h = $('.nxt').height();
 	h = h + 'px';
