@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <!-- Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-135924590-1"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-135924590-1');</script>
+  <meta charset="UTF-8">
+  <title>Todd's Bread Customer List</title>
+  <meta name="description" content="Todd's Bread Template">
+  <meta name="author" content="Luke@JCSC.biz">
+
+  <!--  
+          This HTML was produced By: Luke@jcsc.biz for Mr. Todd White.
+                      
+           ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ ____ 
+          ||L |||u |||k |||e |||@ |||j |||c |||s |||c |||. |||b |||i |||z ||
+          ||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__|||__||
+          |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|
+
+   -->
+  <meta ContentSRC="https://jewettcitysoftwarecorporation.github.io/ToddsBread/">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+
+      <link rel="stylesheet" href="css/CustomerList.css">
+
+  
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="https://use.typekit.net/bkj4imf.css">
+
+<header id="header">
+    <div id="header-title">
+        <h1>Customer List</h1>
+    </div>
+    <div id="header-actions">
+        <ul class="segmented-control">
+            <li>
+                <button type="button" class="is-selected">All</button>
+            </li>
+            <li>
+                <button type="button">Updated</button>
+            </li>
+            <li>
+                <button type="button">Watched</button>
+            </li>
+            <li>
+                <button type="button">Referral</button>
+            </li>
+        </ul>
+        &nbsp;&nbsp;&nbsp;<a href="start.html">Back to Start</a>&nbsp;&nbsp;&nbsp;
+        <a href="#AddNewCustomer" class="openModal" style="display:inline-block">Add New Customer</a>
+        
+    </div>
+</header>
+
+<main id="main">
+    <div id="main-primary">  
+        <!-- Candidate List Template -->
+        <script id="candidate-list-template" type="text/x-handlebars-template">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>&middot;</th>
+                        <th>Customer Name</th>
+                        <th>Rating</th>
+                        <th>Agent</th>
+                        <th>Delivery Status</th>
+                        <th>Location</th>
+                        <th>Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each this}}
+                    <tr>
+                        <td>
+                            <div class="badge">1</div>
+                        </td>
+                        <td>{{first_name}} {{last_name}}</td>
+                        <td>
+                            <ul class="rating">
+                                {{#times star_rating}}
+                                    <li>
+                                        <span class="fa fa-star"></span>
+                                    </li>
+                                {{/times}}
+                            </ul>
+                        </td>
+                        <td>Order ID</td>
+                        <td>{{workflow_stage}}</td>
+                        <td>{{source}}</td>
+                        <td>{{applied_date}}</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </script>
+        
+        <div id="candidate-list-target"></div>
+    </div>
+    
+    <div id="main-side">
+        <div id="main-side-toggle">
+            <button type="button" id="collapse-trigger">
+                <span class="fa fa-filter"></span>
+            </button>
+        </div>
+        
+        <h1>Filter Customer</h1>
+        
+        <ul class="horizontal-list mb2">
+            <li>
+                <button class="btn-ghost is-pill">Updated</button>
+            </li>
+            <li>
+                <button class="btn-ghost is-pill is-large">Watched</button>
+            </li>
+        </ul>
+        
+        <!-- Filter Form Template -->
+        <label for="candidate-name-input">Customer Name</label>
+        <input type="text" class="input" id="Customer-name-input" />
+
+        <script id="filter-form-template" type="text/x-handlebars-template">
+        <label for="job-input">
+            Job
+        </label>
+        <select name="job-input" id="job-input">
+            <option value="">None</option>
+            <option value="software-engineer">
+                Software Engineer
+            </option>
+            {{#each this}}
+            <option value="software-engineer">
+                {{this}}
+            </option>
+            {{/each}}
+        </select>
+        </script>
+        
+        <!-- Filter Form Target -->
+        <div id="filter-form-target"></div>
+        
+        <!-- Main Side Actions -->
+        <div id="main-side-action">
+            <ul class="horizontal-list">
+                <li>
+                    <button class="btn-ghost" id="clear-filter-button">Clear</button>
+                </li>
+                <li>
+                    <button class="btn" id="apply-filter-button">Apply</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+    
+    <aside id="AddNewCustomer" class="modal">
+        <div>
+            <h2><u>Customer Details:</u></h2>
+            <div class="perspective">
+               <p>this is functional!</p><hr /><p>We can discuss this if you need, but this is working.</p>
+               <fieldset>
+                   <label>Customer Name</label><input type="text" />
+               </fieldset>
+               <center><button>Add Customer</button></center>
+            </div>
+            <a href="#close" title="Close">Close</a>
+        </div>
+    </aside>
+    <aside id="example2" class="modal">
+        <div>
+            <h2>Another modal box</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#close" title="Close">Close</a>
+        </div>
+    </aside>
+</main>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js'></script>
+
+  
+
+    <script  src="js/CustomerList.js"></script>
+    <script src="js/modal.js"></script>
+		
+
+
+
+</body>
+
+</html>
